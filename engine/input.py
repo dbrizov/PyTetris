@@ -144,7 +144,7 @@ KEY_NAMES_BY_KEY_CODE = {
 
 def getInputSettings_Internal():
     dirPath = os.path.dirname(os.path.realpath(__file__))
-    filePath = "{0}\\{1}".format(dirPath, "InputSettings.json")
+    filePath = "{0}/{1}".format(dirPath, "InputSettings.json")
     with open(filePath, "r") as fileStream:
         return json.load(fileStream)
 
